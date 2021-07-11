@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Promote Status Saver</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_video_url_her">Enter video url her</string>
+</resources>
