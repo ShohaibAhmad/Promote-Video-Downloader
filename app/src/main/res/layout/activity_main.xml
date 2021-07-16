@@ -95,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="What's Up"
+                    android:text="Fasebook"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="bold"
@@ -125,7 +125,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/Instagram"
+                android:id="@+id/File"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="20dp"
@@ -140,7 +140,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/insta1" />
+                    app:srcCompat="@drawable/file" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -148,7 +148,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="Instagram"
+                    android:text="File"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="bold"
@@ -161,7 +161,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Download Instagram Video"
+                    android:text="Download Any Type File"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView3"
@@ -338,7 +338,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/Share"
+                android:id="@+id/Policy"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="20dp"
@@ -362,7 +362,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="Share App"
+                    android:text="Privacy Policy "
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="bold"
@@ -375,7 +375,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Share App With Your Firends"
+                    android:text="Privacy Policy "
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView77"
@@ -390,117 +390,6 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_baseline_chevron_right_24" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/Rate"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/bottom_shade">
-
-                <ImageView
-                    android:id="@+id/imageView88"
-                    android:layout_width="100dp"
-                    android:layout_height="0dp"
-                    app:tint="@color/teal_200"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_rate" />
-
-                <TextView
-                    android:id="@+id/textView88"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Rate App"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toEndOf="@+id/imageView88"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView888"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="Show Some Love"
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView88"
-                    app:layout_constraintTop_toBottomOf="@+id/textView88" />
-
-                <ImageView
-                    android:id="@+id/imageView888"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_baseline_chevron_right_24" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/MoreApps"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/bottom_shade">
-
-                <ImageView
-                    android:id="@+id/imageView99"
-                    android:layout_width="100dp"
-                    android:layout_height="0dp"
-                    app:tint="@color/teal_200"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_more" />
-
-                <TextView
-                    android:id="@+id/textView99"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:text="More Apps"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toEndOf="@+id/imageView99"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView999"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="View Our Other Creations"
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView99"
-                    app:layout_constraintTop_toBottomOf="@+id/textView99" />
-
-                <ImageView
-                    android:id="@+id/imageView999"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_baseline_chevron_right_24" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
 
         </LinearLayout>

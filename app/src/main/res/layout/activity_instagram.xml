@@ -39,14 +39,14 @@
             app:layout_constraintEnd_toEndOf="@+id/view4"
             app:layout_constraintStart_toStartOf="@+id/view4"
             app:layout_constraintTop_toTopOf="@+id/view3"
-            app:srcCompat="@drawable/insta1" />
+            app:srcCompat="@drawable/file" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Instagram"
+            android:text="File"
             android:textColor="@color/teal_200"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -91,7 +91,10 @@
                             android:id="@+id/Insta_Url"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="hint" />
+                            android:hint="@string/enter_video_url_her"
+                            android:textColorHighlight="@color/teal_200"
+                            android:textColorHint="@color/teal_200"
+                            />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <LinearLayout
@@ -99,7 +102,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
                         android:orientation="horizontal"
-                        android:weightSum="2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
@@ -114,21 +116,6 @@
                             android:background="@color/teal_200"
                             android:padding="12dp"
                             android:text="Download"
-                            android:textAllCaps="false"
-                            android:textColor="@color/white"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            app:backgroundTint="@color/trans" />
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/Past"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="8dp"
-                            android:layout_weight="1"
-                            android:background="@color/teal_200"
-                            android:padding="12dp"
-                            android:text="Past"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
                             android:textSize="20sp"

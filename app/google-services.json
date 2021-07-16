@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "753503734624",
+    "project_id": "promote-video-downloader",
+    "storage_bucket": "promote-video-downloader.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753503734624:android:480a135d1f799c41c3ac05",
+        "android_client_info": {
+          "package_name": "com.promoteprovider.promotevideodownloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753503734624-4h5fuev1qt5h56e4mojs46l8rhvvfugt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANywBu73bb2D9EXfh9pky4NkP98yNbp-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753503734624-4h5fuev1qt5h56e4mojs46l8rhvvfugt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
