@@ -17,7 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PromoteStatusSaver">
-        <activity android:name="com.promoteprovider.promotevideodownloader.Policy"></activity>
+        <activity android:name="com.promoteprovider.promotevideodownloader.Policy">
+
+        </activity>
         <activity android:name="com.promoteprovider.promotevideodownloader.About" />
         <activity android:name="com.promoteprovider.promotevideodownloader.SplashActivity">
             <intent-filter>
