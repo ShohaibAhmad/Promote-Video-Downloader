@@ -37,7 +37,7 @@ import com.promoteprovider.promotevideodownloader.databinding.ActivityMainBindin
 import org.jetbrains.annotations.NotNull;
 
 
-
+import static android.Manifest.permission.MANAGE_EXTERNAL_STORAGE;
 import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 import static android.os.Build.VERSION.SDK_INT;
@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private com.facebook.ads.InterstitialAd fbIntAd;
     String AdmobAdsShowValue="";
 
+    @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -253,6 +254,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         showPermissionDialog();
+        if (SDK_INT >= Build.VERSION_CODES.R) {
+            checkPermission();
+        }
     }
 
     private void LoadFbInterstitialAds() {
@@ -339,17 +343,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.R)
-    private boolean checkPermission() {
+    private void checkPermission() {
         if (SDK_INT >= Build.VERSION_CODES.R) {
-            return Environment.isExternalStorageManager();
+            Environment.isExternalStorageManager();
         } else {
             int write = ContextCompat.checkSelfPermission(getApplicationContext(),
                     WRITE_EXTERNAL_STORAGE);
             int read = ContextCompat.checkSelfPermission(getApplicationContext(),
                     READ_EXTERNAL_STORAGE);
 
-            return write == PackageManager.PERMISSION_GRANTED &&
-                    read == PackageManager.PERMISSION_GRANTED;
         }
     }
 

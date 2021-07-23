@@ -3,19 +3,16 @@ package com.promoteprovider.promotevideodownloader;
 
 
 import android.app.DownloadManager;
-
 import android.net.Uri;
-
 import android.os.Bundle;
 import android.os.Environment;
 import android.webkit.CookieManager;
 import android.webkit.URLUtil;
 import android.widget.Toast;
 
+
 import androidx.appcompat.app.AppCompatActivity;
-
 import androidx.databinding.DataBindingUtil;
-
 
 import com.promoteprovider.promotevideodownloader.databinding.ActivityInstagramBinding;
 
@@ -28,7 +25,6 @@ public class InstagramActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_instagram);
-
         binding.Download.setOnClickListener(view -> {
             String getUrl = binding.InstaUrl.getText().toString();
             DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
@@ -42,6 +38,7 @@ public class InstagramActivity extends AppCompatActivity {
             DownloadManager downloadManager = (DownloadManager)getSystemService(DOWNLOAD_SERVICE);
             downloadManager.enqueue(request);
             Toast.makeText(InstagramActivity.this, "Downloading Started", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(InstagramActivity.this, "Coming Soon", Toast.LENGTH_SHORT).show();
         });
     }
 
